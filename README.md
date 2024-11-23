@@ -16,3 +16,8 @@ In this algorithm, we apply the oracle to the state $|-\rangle = \frac{1}{\sqrt{
 The action of the oracle is therefore:
 
 $$|x\rangle(\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)) \to (-1)^{f(x)}|x\rangle (\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle))$$
+
+
+The $|-\rangle$ state is then omitted as it appears throughout the search algorithm fo simplification:
+
+$$|x\rangle\to (-1)^{f(x)}|x\rangle$$
