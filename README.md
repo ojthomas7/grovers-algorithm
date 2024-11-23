@@ -6,4 +6,4 @@ Suppose we want to search through a set of data, and want to locate the position
 
 We use a quanutm oracle: a blakcbox with the baility to recognise the solution to the search problem. The oracle acts on a state such that:
 
-$$|x\rangle|q\rangle \to |x\rangle|q \xor \rangle$$
+$$|x\rangle|q\rangle \to |x\rangle|q \XOR \rangle$$
