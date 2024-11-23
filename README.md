@@ -11,4 +11,8 @@ $$|x\rangle|q\rangle \to |x\rangle|q \oplus \rangle f(x)$$
 Where $|x\rangle$ is the index register and $|q\rangle$ is a single qubit whichh is flipped if $f(x) = 1$ and unchanged otherwise.
 
 
-In this algorithm, we apply the oracle to the state $|-\rangle = \frac{1}{\sqrt{2}}(\0\rangle - |1\rangle)$
+In this algorithm, we apply the oracle to the state $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$. This is helpful, as if we have the case where $|x\rangle$ is the solution to the search problem, the states $|0\rangle$ and $|1\rangle$ are interchanged by the oracle, and are unchanged if not.
+
+The action of the oracle is therefore:
+
+$$|x\rangle(\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)) \to (-1)^{f(x)}|x\rangle (\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle))$$
