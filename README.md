@@ -21,3 +21,5 @@ $$|x\rangle(\frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)) \to (-1)^{f(x)}|x\rangle 
 The $|-\rangle$ state is then omitted as it appears throughout the search algorithm fo simplification:
 
 $$|x\rangle\to (-1)^{f(x)}|x\rangle$$
+
+## The Procedure
