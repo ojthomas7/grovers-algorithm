@@ -23,3 +23,11 @@ The $|-\rangle$ state is then omitted as it appears throughout the search algori
 $$|x\rangle\to (-1)^{f(x)}|x\rangle$$
 
 ## The Procedure
+
+In this example, building a circuit demonstrating Grovers algorithm in Qiskit, we start by building a simple oracle which applies a phase flip when acted upon the state $|11\rangle$:
+
+'''python
+oracle = QuantumCircuit(2, name='oracle')
+oracle.cz(0,1)
+oracle.to_gate()
+oracle.draw()
