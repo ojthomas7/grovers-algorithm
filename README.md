@@ -19,9 +19,11 @@ search_list = [3, 0, 1, 2]
 target_value = 2
 ```
  The values are then converted to binary for input to the circuit, bearing in mind the order in which Qiskit reads binary inputs.
-## The Oracle
 
-We use a quanutm oracle: a blackbox with the ability to recognise the solution to the search problem. The oracle acts on a state such that:
+ 
+### The Oracle
+
+We then construct our oracle which creates a phase flip for our target state but not the others. The oracle acts on a state such that:
 
 $$|x\rangle|q\rangle \to |x\rangle|q \oplus \rangle f(x)$$
 
