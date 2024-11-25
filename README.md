@@ -4,7 +4,7 @@ Suppose we want to search through a set of data, and want to locate the position
 
 ## The Oracle
 
-We use a quanutm oracle: a blakcbox with the baility to recognise the solution to the search problem. The oracle acts on a state such that:
+We use a quanutm oracle: a blackbox with the ability to recognise the solution to the search problem. The oracle acts on a state such that:
 
 $$|x\rangle|q\rangle \to |x\rangle|q \oplus \rangle f(x)$$
 
