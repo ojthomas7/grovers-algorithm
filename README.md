@@ -47,6 +47,24 @@ oracle_gate = oracle.to_gate()
 oracle.draw()
 ```
 
+### The Reflection/ Diffusion Operator
+
+The reflecion operator is necessary as it amplifies the marked target state by:
+
+- Applying Hadamard gates to all qubits
+- Performing a phase inversion about the mean
+- Applying a second layer of hadamard gates, transforming back to the computational basis
+
+```python
+reflection = QuantumCircuit(2, name='reflection')
+reflection.h([0, 1])
+reflection.z([0, 1])
+reflection.cz(0, 1)
+reflection.h([0, 1])
+reflection_gate = reflection.to_gate()
+
+reflection.draw()
+```
 
 ## The Procedure
 
