@@ -65,14 +65,11 @@ reflection_gate = reflection.to_gate()
 
 reflection.draw()
 ```
+### Execution
 
-## The Procedure
+The circuit is then executed on the QASM simulator and the target value is identified.
 
-In this example, building a circuit demonstrating Grovers algorithm in Qiskit, we start by building a simple oracle which applies a phase flip when acted upon the state $|11\rangle$:
+## Limitations
 
-```python
-oracle = QuantumCircuit(2, name='oracle')
-oracle.cz(0,1)
-oracle.to_gate()
-oracle.draw()
-```
+- This implementation only works with a 2-qubit system, limiting the search space to 4 values (0-3)
+- Requires the target value to be known beforehand to construct the oracle
